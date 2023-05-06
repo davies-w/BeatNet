@@ -16,7 +16,7 @@ import distutils.cmd
 
 
 # Required packages
-#REQUIRED_PACKAGES = [
+# REQUIRED_PACKAGES = [
 #    'numpy',
 #    'cython',
 #    'librosa>=0.8.0',
@@ -29,35 +29,35 @@ import distutils.cmd
 #    'madmom',
 #    'torch',
 #    'Matplotlib',
-]
+#]
 
 
-class MakeReqsCommand(distutils.cmd.Command):
-  """A custom command to export requirements to a requirements.txt file."""
-
-  description = 'Export requirements to a requirements.txt file.'
-  user_options = []
-
-  def initialize_options(self):
-    """Set default values for options."""
-    pass
-
-  def finalize_options(self):
-    """Post-process options."""
-    pass
-
-  def run(self):
+#class MakeReqsCommand(distutils.cmd.Command):
+#  """A custom command to export requirements to a requirements.txt file."""
+#
+#  description = 'Export requirements to a requirements.txt file.'
+#  user_options = []
+#
+#  def initialize_options(self):
+#    """Set default values for options."""
+#    pass
+#
+#  def finalize_options(self):
+#    """Post-process options."""
+#    pass
+#
+ # def run(self):
     """Run command."""
-    with open('./requirements.txt', 'w') as f:
-        for req in REQUIRED_PACKAGES:
-            f.write(req)
-            f.write('\n')
+#    with open('./requirements.txt', 'w') as f:
+ #       for req in REQUIRED_PACKAGES:
+#            f.write(req)
+#            f.write('\n')
 
 
 setuptools.setup(
-    cmdclass={
-        'make_reqs': MakeReqsCommand
-    },
+    #cmdclass={
+    #    'make_reqs': MakeReqsCommand
+   # },
 
     # Package details
     name="BeatNet",
@@ -66,7 +66,7 @@ setuptools.setup(
     packages=find_packages(where="src"),
     # packages=find_packages(),
     include_package_data=True,
-    install_requires=REQUIRED_PACKAGES,
+    #install_requires=REQUIRED_PACKAGES,
 
     # Metadata to display on PyPI
     author="Mojtaba Heydari",
