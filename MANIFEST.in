@@ -1,2 +1,0 @@
-include src/BeatNet/models/*.pt
-include src/BeatNet/test_data/*.mp3
