@@ -11,8 +11,8 @@ Created 07-01-21 by Mojtaba Heydari
 
 # Python standard library imports
 import setuptools
-from setuptools import find_packages
-import distutils.cmd
+#from setuptools import find_packages
+#import distutils.cmd
 
 
 # Required packages
@@ -62,10 +62,10 @@ setuptools.setup(
     # Package details
     name="BeatNet",
     version="1.1.0",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    #package_dir={"": "src"},
+    #packages=find_packages(where="src"),
     # packages=find_packages(),
-    include_package_data=True,
+    #include_package_data=True,
     #install_requires=REQUIRED_PACKAGES,
 
     # Metadata to display on PyPI
