@@ -74,8 +74,8 @@ setuptools.setup(
     description="A package for online and offline music beat, downbeat tempo and meter tracking using BeatNet AI",
     keywords="Beat tracking, Downbeat tracking, meter detection, tempo tracking, particle filtering, real-time beat, real-time tempo",
     url="https://github.com/mjhydri/BeatNet",
-    package_data={'BeatNet': ['BeatNet/models/*.pt']}
-
+    package_data={'beatnet': ['BeatNet/models/*.pt']},
+    include_package_data=True
     # CLI - not developed yet
     #entry_points = {
     #    'console_scripts': ['beatnet=beatnet.cli:main']
