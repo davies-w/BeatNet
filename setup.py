@@ -47,7 +47,7 @@ import setuptools
 #    pass
 #
  # def run(self):
-    """Run command."""
+#    """Run command."""
 #    with open('./requirements.txt', 'w') as f:
  #       for req in REQUIRED_PACKAGES:
 #            f.write(req)
