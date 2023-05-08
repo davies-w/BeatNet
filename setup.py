@@ -73,7 +73,7 @@ setuptools.setup(
     author_email="mhydari@ur.rochester.edu",
     description="A package for online and offline music beat, downbeat tempo and meter tracking using BeatNet AI",
     keywords="Beat tracking, Downbeat tracking, meter detection, tempo tracking, particle filtering, real-time beat, real-time tempo",
-    url="https://github.com/mjhydri/BeatNet"
+    url="https://github.com/mjhydri/BeatNet",
     package_data={'BeatNet': ['BeatNet/models/*.pt']}
 
     # CLI - not developed yet
