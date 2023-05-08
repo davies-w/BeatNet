@@ -1,1 +1,1 @@
-include src/BeatNet/models/*.pt
+include BeatNet/models/*.pt
