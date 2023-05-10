@@ -13,6 +13,15 @@
 !pip install -q pydub
 !pip install --upgrade --no-deps --force-reinstall --quiet 'git+https://github.com/CPJKU/madmom.git'
 !pip install --upgrade --no-deps --force-reinstall --quiet 'git+https://github.com/davies-w/BeatNet.git'
+
+from BeatNet.BeatNet import BeatNet
+
+#wf, sr = mp3_to_norm_wav("born.mp3") whatever you do to load your mp3 into a wav
+
+estimator = BeatNet(2, mode='offline', inference_model='DBN', plot=[], thread=False)
+x=estimator.process(wf)
+print(x)
+
 ```
 # Announcement
 Streaming and realtime capabilities are recently added to the model. In streaming usage cases, make sure to feed the system with as loud input as possible to laverage the maximum streaming performance, given all models are trained on the datasets containing mastered songs.
