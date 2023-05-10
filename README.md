@@ -1,3 +1,19 @@
+#INSTALLING THIS VERSION
+
+!pip install -q cython
+!pip install -q numba
+!pip install -q librosa
+!pip install -q mido
+!pip install -q pytest
+!pip install -q scipy
+!pip install -q numpy
+!pip install -q torch
+!apt-get install portaudio19-dev
+!pip install -q pyaudio
+!pip install -q pydub
+!pip install --upgrade --no-deps --force-reinstall --quiet 'git+https://github.com/CPJKU/madmom.git'
+!pip install --upgrade --no-deps --force-reinstall --quiet 'git+https://github.com/davies-w/BeatNet.git'
+
 # Announcement
 Streaming and realtime capabilities are recently added to the model. In streaming usage cases, make sure to feed the system with as loud input as possible to laverage the maximum streaming performance, given all models are trained on the datasets containing mastered songs.
 
